@@ -7,3 +7,9 @@ Requirements
 ------------
 
 Any Linux hosting with linux console. 
+
+
+License
+-------
+
+General Public License (GPL)
