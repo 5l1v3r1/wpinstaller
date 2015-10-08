@@ -1,8 +1,8 @@
 <?php
 
 if(isset($_GET['dir'])){
-	shell_exec('mkdir ' . $_GET['dir']);
-	$targetdir = getcwd() . '/' . $_GET['dir'];
+	shell_exec('mkdir ' . escapeshellarg($_GET['dir']));
+	$targetdir = getcwd() . '/' . escapeshellarg($_GET['dir']);
 }else{
 	$targetdir = getcwd();
 }
